@@ -16,7 +16,7 @@ dishRouter.route('/')
 })
 
 .post(function (req, res, next) {
-    res.end('will add dish' + req.body.name + 'with details : ' + req.body.description);
+    res.end('will add dish ' + req.body.name + 'with details : ' + req.body.description);
 })
 
 .put( function (req, res, next) {
