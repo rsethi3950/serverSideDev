@@ -33,13 +33,16 @@ connect.then((db) => {
         .then((dishes) => {
             console.log('dishes log ')
             console.log(dishes);
-
+            console.log('remove dishes');  
             return Dishes.remove({});
+            
         })
+    
         .then(() => {
             return mongoose.connection.close();
         })
         .catch((err) => {
             console.log(err);
         });
+        console.log(dishes);
 });
